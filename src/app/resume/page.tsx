@@ -6,7 +6,7 @@ const ResumePage = () => {
     <div style={{ padding: "2rem" }}>
       {/* Header */}
       <Row gap="12" vertical="center">
-        <Text variant="heading" size="4xl" weight="bold">
+        <Text variant="body-strong-xl" weight="bold">
           Resume
         </Text>
       </Row>
@@ -14,7 +14,7 @@ const ResumePage = () => {
       {/* Embed PDF */}
       <div style={{ marginTop: "2rem", width: "100%", height: "90vh" }}>
         <iframe
-          src="/resume_final.pdf"
+          src="/resume.pdf"
           title="Resume"
           width="100%"
           height="100%"
