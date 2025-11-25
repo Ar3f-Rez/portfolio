@@ -174,49 +174,105 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },  
-    ],
-  },
+  display: true, // set to false to hide this section
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "SIEM Tools",
+      description: (
+        <>Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.</>
+      ),
+      tags: [
+        { name: "SIEM", icon: "siem" },
+        { name: "Splunk", icon: "splunk" },
+        { name: "LogRhythm", icon: "logrhythm" },
+      ],
+      images: [],
+    },
+    {
+      title: "Endpoint Detection & Response (EDR) Tools",
+      description: (
+        <>Hands-on experience with EDR solutions for detecting, investigating, and responding to endpoint threats.</>
+      ),
+      tags: [
+        { name: "EDR", icon: "edr" },
+        { name: "CrowdStrike", icon: "crowdstrike" },
+        { name: "SentinelOne", icon: "sentinelone" },
+      ],
+      images: [],
+    },
+    {
+      title: "Incident Response and Triage",
+      description: (
+        <>Skilled in incident response processes, triaging alerts, and coordinating remediation actions.</>
+      ),
+      tags: [
+        { name: "Incident Response", icon: "incident" },
+        { name: "Triage", icon: "triage" },
+        { name: "Forensics", icon: "forensics" },
+      ],
+      images: [],
+    },
+    {
+      title: "Malware & Network Attack Analysis",
+      description: (
+        <>Understanding of malware behavior, network attack vectors, and threat analysis techniques.</>
+      ),
+      tags: [
+        { name: "Malware Analysis", icon: "malware" },
+        { name: "Network Security", icon: "network" },
+        { name: "Threat Hunting", icon: "threat" },
+      ],
+      images: [],
+    },
+    {
+      title: "DDoS Attack Concepts",
+      description: (
+        <>Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.</>
+      ),
+      tags: [
+        { name: "DDoS", icon: "ddos" },
+        { name: "Mitigation", icon: "firewall" },
+      ],
+      images: [],
+    },
+    {
+      title: "Basic Scripting (Python)",
+      description: (
+        <>Proficient in Python scripting for automating security tasks, data analysis, and vulnerability assessments.</>
+      ),
+      tags: [
+        { name: "Python", icon: "python" },
+        { name: "Automation", icon: "automation" },
+      ],
+      images: [],
+    },
+    {
+      title: "Web Application Security",
+      description: (
+        <>Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.</>
+      ),
+      tags: [
+        { name: "SQL Injection", icon: "sql" },
+        { name: "XSS", icon: "xss" },
+        { name: "Secure Coding", icon: "web" },
+      ],
+      images: [],
+    },
+    {
+      title: "Cloud Technologies & Security",
+      description: (
+        <>Experience with cloud platforms, cloud security best practices, and securing cloud infrastructure.</>
+      ),
+      tags: [
+        { name: "Cloud", icon: "cloud" },
+        { name: "AWS", icon: "aws" },
+        { name: "Azure", icon: "azure" },
+      ],
+      images: [],
+    },
+  ],
+},
 };
 
 const blog: Blog = {
