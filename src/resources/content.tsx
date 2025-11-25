@@ -62,7 +62,7 @@ const home: Home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Aref Rezai Portfolio</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">George Brown College</strong>{" "}
@@ -76,12 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Aref Rezai, Cybersecurity Student at {" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
+      I'm Aref Rezai, Cybersecurity Student at George Brown College
       , And This is my Portfolio
       <br /> Here, You can find more about my Projects and my educational background
     </>
