@@ -12,7 +12,7 @@ const ResumePage = () => {
         </Text>
 
         <Button
-          variant="primary"  // ✅ fixed
+          variant="primary"
           size="md"
           onClick={() => window.open("/resume.pdf", "_blank")}
         >
@@ -21,10 +21,25 @@ const ResumePage = () => {
       </Row>
 
       {/* PDF Embed */}
-      <div style={{ width: "100%", height: "80vh", borderRadius: "8px", overflow: "hidden", boxShadow: "0 4px 10px rgba(0,0,0,0.1)" }}>
+      <div
+        style={{
+          width: "100%",
+          height: "80vh",
+          borderRadius: "8px",
+          overflow: "hidden",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        }}
+      >
         <iframe
           src="/resume.pdf"
           title="Resume"
           width="100%"
           height="100%"
-          style=
+          style={{ border: "none" }}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ResumePage;
