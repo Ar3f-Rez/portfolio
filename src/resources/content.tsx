@@ -179,124 +179,65 @@ const about: About = {
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "SIEM Tools",
-        description: (
-          <>Security Information and Event Management</>
-        ),
-        tags: [
-          {
-            name: "SIEM Tools",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },
-      {
-        title: "Incident Response and Triage",
-        description: (
-          <>Incident Response and Triage</>
-        ),
-        tags: [
-          {
-            name: "Incident Response and Triage",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },
-      {
-        title: "Understanding of Malware and Network Attack Vectors",
-        description: (
-          <>Understanding of Malware and Network Attack Vectors</>
-        ),
-        tags: [
-          {
-            name: "Understanding of Malware and Network Attack Vectors",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },
-      {
-        title: "DDoS Attack Concepts",
-        description: (
-          <>DDoS Attack Concepts</>
-        ),
-        tags: [
-          {
-            name: "DDoS Attack Concepts",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },
-      {
-        title: "Endpoint Detection & Response (EDR) Tools",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        {
-        title: "Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)",
-        description: (
-          <>Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)</>
-        ),
-        tags: [
-          {
-            name: "XSS",
-            icon: "javascript",
-          },
-          {
-            name: "SQL",
-            icon: "nextjs",
-          },
-          {
-            name: "Web Application",
-            icon: "supabase",
-          },
-        {
-        title: "Basic Scripting (Python)",
-        description: (
-          <>Basic Scripting (Python)</>
-        ),
-        tags: [
-          {
-            name: "Python",
-            icon: "javascript",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
-      },  
-    ],
-  },
+technical: {
+  display: true,
+  title: "Technical skills",
+  skills: [
+    {
+      title: "SIEM Tools",
+      description: <>Security Information and Event Management</>,
+      tags: [{ name: "SIEM Tools", icon: "figma" }],
+      images: [],
+    },
+    {
+      title: "Incident Response and Triage",
+      description: <>Incident Response and Triage</>,
+      tags: [{ name: "Incident Response", icon: "figma" }],
+      images: [],
+    },
+    {
+      title: "Understanding of Malware and Network Attack Vectors",
+      description: <>Understanding of Malware and Network Attack Vectors</>,
+      tags: [
+        { name: "Malware", icon: "figma" },
+        { name: "Network Attacks", icon: "figma" },
+      ],
+      images: [],
+    },
+    {
+      title: "DDoS Attack Concepts",
+      description: <>DDoS Attack Concepts</>,
+      tags: [{ name: "DDoS", icon: "figma" }],
+      images: [],
+    },
+    {
+      title: "Endpoint Detection & Response (EDR) Tools",
+      description: <>Experience with Endpoint Detection & Response (EDR) tools</>,
+      tags: [
+        { name: "EDR", icon: "figma" },
+        { name: "Cybersecurity", icon: "figma" },
+      ],
+      images: [],
+    },
+    {
+      title: "Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)",
+      description: <>Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)</>,
+      tags: [
+        { name: "XSS", icon: "javascript" },
+        { name: "SQL Injection", icon: "sql" },
+        { name: "Web App Security", icon: "figma" },
+      ],
+      images: [],
+    },
+    {
+      title: "Basic Scripting (Python)",
+      description: <>Basic Scripting (Python)</>,
+      tags: [{ name: "Python", icon: "python" }],
+      images: [],
+    },
+  ],
 };
+
 
 const blog: Blog = {
   path: "/blog",
