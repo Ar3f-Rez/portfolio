@@ -60,12 +60,12 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Aref Rezai Portfolio</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">George Brown College</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Aref Rezai, Cybersecurity Student at George Brown College {" "}
+      I'm Aref Rezai, Cybersecurity Student at {" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
@@ -101,7 +101,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -109,28 +109,29 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion
+        for transforming complex security challenges into clear, actionable solutions.
+        His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
+        experience in SIEM tools, incident response, and digital forensics.
       </>
     ),
   },
   work: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "DYNEX TECHNOLOGIES",
+        timeframe: "Apr 2025 – Aug 2025",
+        role: "MATERIAL HANDLER",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Inspected incoming and outgoing goods for quality and quantity
+            against purchase orders and shipping
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Managed and organized inventory for a fast-paced warehouse, and 
+            Collaborated with team members to optimize storage solutions and improve material flow
           </>,
         ],
         images: [
@@ -144,17 +145,21 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
+        company: "EasyTech4Business Inc",
         timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        role: "IT TECHNICIAN",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Configured and optimized network systems, 
+            enhancing data transmission efficiency and significantly improving user experience.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45
+            connectors and keystone jacks, for residential and commercial data/voice networks.
+          </>,
+          <>
+            Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, 
+            ensuring optimal performance and minimal downtime.
           </>,
         ],
         images: [],
@@ -166,12 +171,16 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "George Brown College",
+        description: <>CYBERSECURITY (POSTGRADUATE CERTIFICATE)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "George Brown College",
+        description: <>CLOUD COMPUTING TECHNOLOGIES (POSTGRADUATE CERTIFICATE)</>,
+      },
+       {
+        name: "George Brown College",
+        description: <>COMPUTER SYSTEMS TECHNOLOGY (3 YEARS ADVANCED DIPLOMA)</>,
       },
     ],
   },
