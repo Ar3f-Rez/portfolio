@@ -4,54 +4,26 @@ import { Line, Logo, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Aref",
   lastName: "Rezai",
-  name: `Aref Rezai`,
+  name: "Aref Rezai",
   role: "Student",
   avatar: "/images/avatar.jpg",
   email: "aref.rezai@gmail.com",
-  location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Toronto",
+  languages: ["English", "Bahasa"],
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: `Subscribe to ${person.firstName}'s Newsletter`,
+  description: "My weekly newsletter about creativity and engineering",
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com",
-    essential: true,
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/",
-    essential: true,
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
-    essential: true,
-  },
+  { name: "GitHub", icon: "github", link: "https://github.com", essential: true },
+  { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/", essential: true },
+  { name: "Instagram", icon: "instagram", link: "https://www.instagram.com/", essential: false },
+  { name: "Threads", icon: "threads", link: "https://www.threads.com/", essential: true },
+  { name: "Email", icon: "email", link: `mailto:${person.email}`, essential: true },
 ];
 
 const home: Home = {
@@ -60,27 +32,13 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Aref Rezai Portfolio</>,
+  headline: "Aref Rezai Portfolio",
   featured: {
     display: false,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">George Brown College</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
+    title: "George Brown College – Featured work",
     href: "/work/building-once-ui-a-customizable-design-system",
   },
-  subline: (
-    <>
-      I'm Aref Rezai, Cybersecurity Student at George Brown College
-      , And This is my Portfolio
-      <br /> Here, You can find more about my Projects and my educational background
-    </>
-  ),
+  subline: "I'm Aref Rezai, Cybersecurity Student at George Brown College. Here, you can find more about my projects and my educational background.",
 };
 
 const about: About = {
@@ -88,31 +46,17 @@ const about: About = {
   label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
-  tableOfContent: {
-    display: true,
-    subItems: false,
-  },
-  avatar: {
-    display: true,
-  },
-  calendar: {
-    display: false,
-    link: "https://cal.com",
-  },
+  tableOfContent: { display: true, subItems: false },
+  avatar: { display: true },
+  calendar: { display: false, link: "https://cal.com" },
   intro: {
     display: true,
     title: "Introduction",
-    description: (
-      <>
-        Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion
-        for transforming complex security challenges into clear, actionable solutions.
-        His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on
-        experience in SIEM tools, incident response, and digital forensics.
-      </>
-    ),
+    description:
+      "Aref is a Toronto-based IT Technician and aspiring SOC analyst with a passion for transforming complex security challenges into clear, actionable solutions. His work spans network configuration, system troubleshooting, and cybersecurity, with hands-on experience in SIEM tools, incident response, and digital forensics.",
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
@@ -120,23 +64,11 @@ const about: About = {
         timeframe: "Apr 2025 – Aug 2025",
         role: "MATERIAL HANDLER",
         achievements: [
-          <>
-            Inspected incoming and outgoing goods for quality and quantity
-            against purchase orders and shipping
-          </>,
-          <>
-            Managed and organized inventory for a fast-paced warehouse, and 
-            Collaborated with team members to optimize storage solutions and improve material flow
-          </>,
+          "Inspected incoming and outgoing goods for quality and quantity against purchase orders and shipping.",
+          "Managed and organized inventory for a fast-paced warehouse, collaborating with team members to optimize storage solutions and improve material flow.",
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          { src: "", alt: "Project image", width: 16, height: 9 },
         ],
       },
       {
@@ -144,48 +76,32 @@ const about: About = {
         timeframe: "2018 - 2022",
         role: "IT TECHNICIAN",
         achievements: [
-          <>
-            Configured and optimized network systems, 
-            enhancing data transmission efficiency and significantly improving user experience.
-          </>,
-          <>
-            Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45
-            connectors and keystone jacks, for residential and commercial data/voice networks.
-          </>,
-          <>
-            Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, 
-            ensuring optimal performance and minimal downtime.
-          </>,
+          "Configured and optimized network systems, enhancing data transmission efficiency and significantly improving user experience.",
+          "Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45 connectors and keystone jacks, for residential and commercial data/voice networks.",
+          "Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, ensuring optimal performance and minimal downtime.",
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
-      {
-        name: "George Brown College",
-        description: <>CYBERSECURITY (POSTGRADUATE CERTIFICATE)</>,
-      },
-      {
-        name: "George Brown College",
-        description: <>CLOUD COMPUTING TECHNOLOGIES (POSTGRADUATE CERTIFICATE)</>,
-      },
-       {
-        name: "George Brown College",
-        description: <>COMPUTER SYSTEMS TECHNOLOGY (3 YEARS ADVANCED DIPLOMA)</>,
-      },
+      { name: "George Brown College", description: "CYBERSECURITY (POSTGRADUATE CERTIFICATE)" },
+      { name: "George Brown College", description: "CLOUD COMPUTING TECHNOLOGIES (POSTGRADUATE CERTIFICATE)" },
+      { name: "George Brown College", description: "COMPUTER SYSTEMS TECHNOLOGY (3 YEARS ADVANCED DIPLOMA)" },
     ],
   },
-technical: {
+};
+
+const technical = {
   display: true,
   title: "Technical Skills",
   skills: [
     {
       title: "SIEM Tools",
-      description: <>Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.</>,
+      description: "Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.",
       tags: [
         { name: "SIEM", icon: "siem" },
         { name: "Splunk", icon: "splunk" },
@@ -195,7 +111,7 @@ technical: {
     },
     {
       title: "Incident Response and Triage",
-      description: <>Skilled in incident response processes, triaging alerts, and coordinating remediation actions.</>,
+      description: "Skilled in incident response processes, triaging alerts, and coordinating remediation actions.",
       tags: [
         { name: "Incident Response", icon: "incident" },
         { name: "Triage", icon: "triage" },
@@ -205,7 +121,7 @@ technical: {
     },
     {
       title: "Malware & Network Attack Analysis",
-      description: <>Understanding of malware behavior, network attack vectors, and threat analysis techniques.</>,
+      description: "Understanding of malware behavior, network attack vectors, and threat analysis techniques.",
       tags: [
         { name: "Malware Analysis", icon: "malware" },
         { name: "Network Security", icon: "network" },
@@ -215,7 +131,7 @@ technical: {
     },
     {
       title: "DDoS Attack Concepts",
-      description: <>Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.</>,
+      description: "Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.",
       tags: [
         { name: "DDoS", icon: "ddos" },
         { name: "Mitigation", icon: "firewall" },
@@ -224,7 +140,7 @@ technical: {
     },
     {
       title: "Endpoint Detection & Response (EDR) Tools",
-      description: <>Experience with EDR solutions for detecting, investigating, and responding to endpoint threats.</>,
+      description: "Experience with EDR solutions for detecting, investigating, and responding to endpoint threats.",
       tags: [
         { name: "EDR", icon: "edr" },
         { name: "CrowdStrike", icon: "crowdstrike" },
@@ -234,7 +150,7 @@ technical: {
     },
     {
       title: "Web Application Security",
-      description: <>Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.</>,
+      description: "Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.",
       tags: [
         { name: "SQL Injection", icon: "sql" },
         { name: "XSS", icon: "xss" },
@@ -244,7 +160,7 @@ technical: {
     },
     {
       title: "Basic Scripting (Python)",
-      description: <>Proficient in Python scripting for automating security tasks and analysis.</>,
+      description: "Proficient in Python scripting for automating security tasks and analysis.",
       tags: [
         { name: "Python", icon: "python" },
         { name: "Automation", icon: "automation" },
@@ -259,8 +175,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -268,8 +182,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -277,50 +189,16 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, technical, blog, work, gallery };
