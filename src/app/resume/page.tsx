@@ -12,7 +12,7 @@ const ResumePage = () => {
         </Text>
 
         <Button
-          variant="solid"
+          variant="primary"  // ✅ fixed
           size="md"
           onClick={() => window.open("/resume.pdf", "_blank")}
         >
@@ -27,11 +27,4 @@ const ResumePage = () => {
           title="Resume"
           width="100%"
           height="100%"
-          style={{ border: "none" }}
-        />
-      </div>
-    </div>
-  );
-};
-
-export default ResumePage;
+          style=
