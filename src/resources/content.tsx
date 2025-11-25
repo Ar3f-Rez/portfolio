@@ -1,5 +1,5 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Aref",
@@ -7,9 +7,9 @@ const person: Person = {
   name: `Aref Rezai`,
   role: "Student",
   avatar: "/images/avatar.jpg",
-  email: "aref.rezaie@gmail.com",
-  location: "America/Toronto",
-  languages: ["English", "Bahasa Indonesia"],
+  email: "aref.rezai@gmail.com",
+  location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -19,6 +19,9 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
+  // Links are automatically displayed.
+  // Import new icons in /once-ui/icons.ts
+  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
@@ -63,7 +66,7 @@ const home: Home = {
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">George Brown College</strong>{" "}
-        <Line background="brand-alpha-strong" vertical height="20" />
+        <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
@@ -73,8 +76,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Aref Rezai, Cybersecurity Student at George Brown College, and this is my Portfolio
-      <br />Here, you can find more about my projects and educational background
+      I'm Aref Rezai, Cybersecurity Student at George Brown College
+      , And This is my Portfolio
+      <br /> Here, You can find more about my Projects and my educational background
     </>
   ),
 };
@@ -108,7 +112,7 @@ const about: About = {
     ),
   },
   work: {
-    display: true,
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -121,11 +125,19 @@ const about: About = {
             against purchase orders and shipping
           </>,
           <>
-            Managed and organized inventory for a fast-paced warehouse, and
-            collaborated with team members to optimize storage solutions and improve material flow
+            Managed and organized inventory for a fast-paced warehouse, and 
+            Collaborated with team members to optimize storage solutions and improve material flow
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "EasyTech4Business Inc",
@@ -133,13 +145,16 @@ const about: About = {
         role: "IT TECHNICIAN",
         achievements: [
           <>
-            Configured and optimized network systems, enhancing data transmission efficiency and improving user experience.
+            Configured and optimized network systems, 
+            enhancing data transmission efficiency and significantly improving user experience.
           </>,
           <>
-            Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45 connectors and keystone jacks, for residential and commercial data/voice networks.
+            Installed, terminated, and tested Ethernet (Cat6) cabling, including RJ45
+            connectors and keystone jacks, for residential and commercial data/voice networks.
           </>,
           <>
-            Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, ensuring optimal performance and minimal downtime.
+            Performed comprehensive hardware and software troubleshooting to diagnose and resolve system issues, 
+            ensuring optimal performance and minimal downtime.
           </>,
         ],
         images: [],
@@ -147,7 +162,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: true,
+    display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -158,84 +173,72 @@ const about: About = {
         name: "George Brown College",
         description: <>CLOUD COMPUTING TECHNOLOGIES (POSTGRADUATE CERTIFICATE)</>,
       },
-      {
+       {
         name: "George Brown College",
         description: <>COMPUTER SYSTEMS TECHNOLOGY (3 YEARS ADVANCED DIPLOMA)</>,
       },
     ],
   },
   technical: {
-    display: true,
-    title: "Technical Skills",
+    display: true, // set to false to hide this section
+    title: "Technical skills",
     skills: [
       {
-        title: "SIEM Tools",
-        description: <>Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.</>,
+        title: "Figma",
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
         tags: [
-          { name: "SIEM", icon: "siem" },
-          { name: "Splunk", icon: "splunk" },
-          { name: "LogRhythm", icon: "logrhythm" },
+          {
+            name: "Figma",
+            icon: "figma",
+          },
         ],
-        images: [],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
-        title: "Incident Response and Triage",
-        description: <>Skilled in incident response processes, triaging alerts, and coordinating remediation actions.</>,
+        title: "Next.js",
+        description: (
+          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+        ),
         tags: [
-          { name: "Incident Response", icon: "incident" },
-          { name: "Triage", icon: "triage" },
-          { name: "Forensics", icon: "forensics" },
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "Next.js",
+            icon: "nextjs",
+          },
+          {
+            name: "Supabase",
+            icon: "supabase",
+          },
         ],
-        images: [],
-      },
-      {
-        title: "Malware & Network Attack Analysis",
-        description: <>Understanding of malware behavior, network attack vectors, and threat analysis techniques.</>,
-        tags: [
-          { name: "Malware Analysis", icon: "malware" },
-          { name: "Network Security", icon: "network" },
-          { name: "Threat Hunting", icon: "threat" },
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
         ],
-        images: [],
-      },
-      {
-        title: "DDoS Attack Concepts",
-        description: <>Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.</>,
-        tags: [
-          { name: "DDoS", icon: "ddos" },
-          { name: "Mitigation", icon: "firewall" },
-        ],
-        images: [],
-      },
-      {
-        title: "Endpoint Detection & Response (EDR) Tools",
-        description: <>Experience with EDR solutions for detecting, investigating, and responding to endpoint threats.</>,
-        tags: [
-          { name: "EDR", icon: "edr" },
-          { name: "CrowdStrike", icon: "crowdstrike" },
-          { name: "SentinelOne", icon: "sentinelone" },
-        ],
-        images: [],
-      },
-      {
-        title: "Web Application Security",
-        description: <>Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.</>,
-        tags: [
-          { name: "SQL Injection", icon: "sql" },
-          { name: "XSS", icon: "xss" },
-          { name: "Secure Coding", icon: "web" },
-        ],
-        images: [],
-      },
-      {
-        title: "Basic Scripting (Python)",
-        description: <>Proficient in Python scripting for automating security tasks and analysis.</>,
-        tags: [
-          { name: "Python", icon: "python" },
-          { name: "Automation", icon: "automation" },
-        ],
-        images: [],
-      },
+      },  
     ],
   },
 };
@@ -245,6 +248,8 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
+  // Create new blog posts by adding a new .mdx file to app/blog/posts
+  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -252,6 +257,8 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -259,15 +266,49 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
+  // Images by https://lorant.one
+  // These are placeholder images, replace with your own
   images: [
-    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
+    {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/vertical-2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-4.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-3.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
   ],
 };
 
