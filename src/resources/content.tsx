@@ -184,13 +184,13 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "SIEM Tools",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Security Information and Event Management</>
         ),
         tags: [
           {
-            name: "SIEM Tools (Security Information and Event Management)",
+            name: "SIEM Tools",
             icon: "figma",
           },
         ],
@@ -199,7 +199,52 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Incident Response and Triage",
+        description: (
+          <>Incident Response and Triage</>
+        ),
+        tags: [
+          {
+            name: "Incident Response and Triage",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      },
+      {
+        title: "Understanding of Malware and Network Attack Vectors",
+        description: (
+          <>Understanding of Malware and Network Attack Vectors</>
+        ),
+        tags: [
+          {
+            name: "Understanding of Malware and Network Attack Vectors",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      },
+      {
+        title: "DDoS Attack Concepts",
+        description: (
+          <>DDoS Attack Concepts</>
+        ),
+        tags: [
+          {
+            name: "DDoS Attack Concepts",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+        ],
+      },
+      {
+        title: "Endpoint Detection & Response (EDR) Tools",
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
@@ -216,15 +261,37 @@ const about: About = {
             name: "Supabase",
             icon: "supabase",
           },
+        {
+        title: "Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)",
+        description: (
+          <>Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)</>
+        ),
+        tags: [
+          {
+            name: "XSS",
+            icon: "javascript",
+          },
+          {
+            name: "SQL",
+            icon: "nextjs",
+          },
+          {
+            name: "Web Application",
+            icon: "supabase",
+          },
+        {
+        title: "Basic Scripting (Python)",
+        description: (
+          <>Basic Scripting (Python)</>
+        ),
+        tags: [
+          {
+            name: "Python",
+            icon: "javascript",
+          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },  
     ],
