@@ -181,63 +181,78 @@ const about: About = {
   },
 technical: {
   display: true,
-  title: "Technical skills",
+  title: "Technical Skills",
   skills: [
     {
       title: "SIEM Tools",
-      description: <>Security Information and Event Management</>,
-      tags: [{ name: "SIEM Tools", icon: "figma" }],
+      description: <>Experience with Security Information and Event Management (SIEM) tools for monitoring and analyzing security events.</>,
+      tags: [
+        { name: "SIEM", icon: "siem" },
+        { name: "Splunk", icon: "splunk" },
+        { name: "LogRhythm", icon: "logrhythm" },
+      ],
       images: [],
     },
     {
       title: "Incident Response and Triage",
-      description: <>Incident Response and Triage</>,
-      tags: [{ name: "Incident Response", icon: "figma" }],
+      description: <>Skilled in incident response processes, triaging alerts, and coordinating remediation actions.</>,
+      tags: [
+        { name: "Incident Response", icon: "incident" },
+        { name: "Triage", icon: "triage" },
+        { name: "Forensics", icon: "forensics" },
+      ],
       images: [],
     },
     {
-      title: "Understanding of Malware and Network Attack Vectors",
-      description: <>Understanding of Malware and Network Attack Vectors</>,
+      title: "Malware & Network Attack Analysis",
+      description: <>Understanding of malware behavior, network attack vectors, and threat analysis techniques.</>,
       tags: [
-        { name: "Malware", icon: "figma" },
-        { name: "Network Attacks", icon: "figma" },
+        { name: "Malware Analysis", icon: "malware" },
+        { name: "Network Security", icon: "network" },
+        { name: "Threat Hunting", icon: "threat" },
       ],
       images: [],
     },
     {
       title: "DDoS Attack Concepts",
-      description: <>DDoS Attack Concepts</>,
-      tags: [{ name: "DDoS", icon: "figma" }],
-      images: [],
-    },
-    {
-      title: "Endpoint Detection & Response (EDR) Tools",
-      description: <>Experience with Endpoint Detection & Response (EDR) tools</>,
+      description: <>Knowledge of Distributed Denial-of-Service (DDoS) attack types, mitigation strategies, and defense techniques.</>,
       tags: [
-        { name: "EDR", icon: "figma" },
-        { name: "Cybersecurity", icon: "figma" },
+        { name: "DDoS", icon: "ddos" },
+        { name: "Mitigation", icon: "firewall" },
       ],
       images: [],
     },
     {
-      title: "Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)",
-      description: <>Web Application Security Vulnerabilities (e.g., SQL Injection, XSS)</>,
+      title: "Endpoint Detection & Response (EDR) Tools",
+      description: <>Experience with EDR solutions for detecting, investigating, and responding to endpoint threats.</>,
       tags: [
-        { name: "XSS", icon: "javascript" },
+        { name: "EDR", icon: "edr" },
+        { name: "CrowdStrike", icon: "crowdstrike" },
+        { name: "SentinelOne", icon: "sentinelone" },
+      ],
+      images: [],
+    },
+    {
+      title: "Web Application Security",
+      description: <>Understanding of web app vulnerabilities such as SQL Injection, XSS, and secure coding practices.</>,
+      tags: [
         { name: "SQL Injection", icon: "sql" },
-        { name: "Web App Security", icon: "figma" },
+        { name: "XSS", icon: "xss" },
+        { name: "Secure Coding", icon: "web" },
       ],
       images: [],
     },
     {
       title: "Basic Scripting (Python)",
-      description: <>Basic Scripting (Python)</>,
-      tags: [{ name: "Python", icon: "python" }],
+      description: <>Proficient in Python scripting for automating security tasks and analysis.</>,
+      tags: [
+        { name: "Python", icon: "python" },
+        { name: "Automation", icon: "automation" },
+      ],
       images: [],
     },
   ],
 };
-
 
 const blog: Blog = {
   path: "/blog",
