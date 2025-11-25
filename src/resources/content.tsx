@@ -76,14 +76,14 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Aref, a Cybersecurity Student{" "}
+      I'm Aref Rezai, Cybersecurity Student at George Brown College {" "}
       <Logo
         dark
         icon="/trademarks/wordmark-dark.svg"
         style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
       />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      , And This is my Portfolio
+      <br /> Here, You can find more about my Projects and my educational background
     </>
   ),
 };
@@ -116,7 +116,7 @@ const about: About = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
