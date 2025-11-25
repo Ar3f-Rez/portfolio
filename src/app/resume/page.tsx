@@ -7,7 +7,7 @@ const ResumePage = () => {
       
       {/* Header */}
       <Row gap="12" vertical="center" style={{ justifyContent: "space-between" }}>
-        <Text variant="body-strong-xl" weight="bold">
+        <Text variant="body-strong-xl" weight="strong">
           Resume
         </Text>
 
