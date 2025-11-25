@@ -190,24 +190,12 @@ const about: About = {
         ),
         tags: [
           {
-            name: "Figma",
+            name: "SIEM Tools (Security Information and Event Management)",
             icon: "figma",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
